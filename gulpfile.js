@@ -4,12 +4,12 @@ var sass = require('gulp-sass');
 
 // definimos tarea para compilar SASS
 gulp.task("default", ["compile-sass"], function(){
-    gulp.watch("src/scss/*.scss", ["compile-sass"]);
+    gulp.watch("src/scss/*.scss", ["compile-sass"]); //observa cambios en los archivos scss
 });
 
 // definimos tarea para compilar SASS
 gulp.task("compile-sass", function(){
     gulp.src("./src/scss/style.scss") // cargamos el archivo
-    .pipe(sass().on('error', sass.logError)) // compilamos el archivo SASS
+    .pipe(sass().on('error', sass.logError)) // compilamos el archivo SASS y controlamos errores
     .pipe(gulp.dest("./dist/css/")); // guardamos el archivo en dist/css
 });

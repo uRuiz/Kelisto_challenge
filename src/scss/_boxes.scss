@@ -1,0 +1,13 @@
+.grey-box {
+    float: left;
+    @extend .clearfix;
+    width: 45%;
+    height: 200px;
+    background-color: grey;
+    @include if-is-tablet {
+        width: 25%;
+    }
+    @include if-is-desktop {
+        width: 20%;
+    }
+}

@@ -5,11 +5,11 @@ Challenge de Kelisto.
 Para instalar dependencias: 
 
 ```sh
-npm install 
+$ npm install 
 ```
 
-Para compilar el scss, ejecutar: 
+Para compilar el scss, ejecutar en la consola : 
 ```sh
-gulp 
+$ gulp 
 ```
 

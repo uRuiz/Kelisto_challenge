@@ -1,0 +1,58 @@
+body{
+    background: $body-background-color;
+	color: $main-text-color;
+	font-size: $font-size-base;
+    @include if-is-desktop {
+        font-size: $font-size-large;
+    }
+}
+
+section {
+    @extend .clearfix;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+label, input, button, textarea {
+    display: block;
+   // width: 100%;
+    box-sizing: border-box;
+}
+label {
+    font-size: $font-size-small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input {
+    border: 1px solid $color-kelisto;
+    margin: 5px 0px 15px 0px;
+    padding: 10px;
+    font-size: $font-size-base;
+    border-radius: 5px;
+    &:focus {
+        outline-color: $color-kelisto;
+        background: $color-white;
+    }
+}
+button {
+    @extend input;
+    background: $color-kelisto;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darken($color-kelisto, 50%);
+    transition: all 0.25s;
+    &:hover {
+        background: darken($color-kelisto, 10%);
+    }
+    &:active { // button:active
+        background: darken($color-kelisto, 20%);
+        color: $color-white;
+    }
+}
+
+textarea {
+	@extend input;
+	resize: none;
+}
