@@ -1,13 +1,23 @@
-.grey-box {
-    float: left;
-    @extend .clearfix;
-    width: 45%;
-    height: 200px;
-    background-color: grey;
+.main-section{
+    max-width: 1280px;
+    text-align:center; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include if-is-desktop {
+        margin-top: 30px;
+    }   
+}
+
+.boxes {
+    background-color: #eee;
+    height: 250px;
+    width:48%;
+    margin: 10px 1%;
     @include if-is-tablet {
-        width: 25%;
+        width:23%;
     }
     @include if-is-desktop {
-        width: 20%;
+        width:18%;
     }
 }
