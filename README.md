@@ -1,14 +1,14 @@
 # KELISTO CHALLENGE
 
-Challenge de Kelisto.
+Challenge de maquetación de Kelisto.
 
-Para instalar dependencias: 
+Para instalar dependencias de la prueba ejecutar en la carpeta del proyecto: 
 
 ```sh
 $ npm install 
 ```
 
-Para compilar el scss, ejecutar en la consola : 
+Al estar hecho con SASS, hace falta compilar el css. Ejecutar en la consola : 
 ```sh
 $ gulp 
 ```
