@@ -19,7 +19,6 @@ img, embed, object, video {
 
 label, input, button, textarea {
     display: block;
-   // width: 100%;
     box-sizing: border-box;
 }
 label {
@@ -28,28 +27,26 @@ label {
     text-transform: uppercase;
 }
 input {
-    border: 1px solid $color-kelisto;
     margin: 5px 0px 15px 0px;
     padding: 10px;
     font-size: $font-size-base;
     border-radius: 5px;
     &:focus {
-        outline-color: $color-kelisto;
+        outline-color: $color-black;
         background: $color-white;
     }
 }
 button {
     @extend input;
-    background: $color-kelisto;
+    background: #bbb;
     font-weight: bold;
     text-transform: uppercase;
-    color: darken($color-kelisto, 50%);
-    transition: all 0.25s;
+    color: darken($color-black, 50%);
     &:hover {
-        background: darken($color-kelisto, 10%);
+        background: darken($color-black, 10%);
     }
     &:active { // button:active
-        background: darken($color-kelisto, 20%);
+        background: darken($color-black, 20%);
         color: $color-white;
     }
 }

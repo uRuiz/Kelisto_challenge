@@ -8,6 +8,12 @@ body {
     bottom: 0
 }
 
+#myNavbar{
+    @include if-is-desktop{
+        max-width: 1280px;
+        margin: auto;
+    }    
+}
 
 .sideMenu,
 .sidebarNavigation {
