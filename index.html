@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="dist/css/style.css">    
     <title>Kelisto challenge</title>
+    <script src="src/js/sidebarNavigation.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <header class="web-header">
-        <nav class="navbar navbar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        			<span class="glyphicon glyphicon-menu-hamburger"></span>		        		
-		      		</button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                    </ul>
-                </div>
-            </div>
+        <!--
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>
+            <a href="#">Lorem Ipsum</a>           
         </nav>
+        -->
+        <nav class="navbar navbar-inverse sidebarNavigation" data-sidebarClass="navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                    <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">Lorem Ipsum</a></li>
+                      <li><a href="#">Lorem Ipsum</a></li>
+                      <li><a href="#">Lorem Ipsum</a></li>
+                      <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>                  
+                  </div>
+                </div>
+              </nav>
+
+
+        <span class="hamburguer-icon" onclick="openNav()">&#9776;</span>
     </header>
     <div class="jumbotron">
         <div class="custom-jumbotron">
@@ -55,6 +74,15 @@
         <span>Lorem Ipsum</span>
         <span>Lorem Ipsum</span>
         <span>Lorem Ipsum</span>
-	</footer>
+    </footer>
+ <!--   <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
+    </script>-->
 </body>
 </html>

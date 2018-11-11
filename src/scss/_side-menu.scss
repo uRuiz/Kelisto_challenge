@@ -1,0 +1,46 @@
+body {
+    position: relative
+}
+
+.overlay,
+.sideMenu {
+    position: fixed;
+    bottom: 0
+}
+
+
+.sideMenu,
+.sidebarNavigation {
+    z-index: 999;
+    margin-bottom: 0
+}
+
+.overlay.open {
+    left: 0;
+    right: 0
+}
+
+.sidebarNavigation .left-navbar-toggle {
+    float: left;
+    margin-right: 0;
+    margin-left: 15px
+}
+
+.sideMenu {
+    right: -100%;
+    top: 52px;
+    transition: all ease-in-out .4s;
+    overflow: hidden;
+    width: 100%;
+    max-width: 50%
+}
+
+.sideMenu.open {
+    right: 0;
+    display: block;
+    overflow-y: auto
+}
+
+.sideMenu ul {
+    margin: 0
+}
